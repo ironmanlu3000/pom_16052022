@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.TestCases">
+        <methods>
+          <include name="TearDown"/>
+          <include name="searchResult"/>
+          <include name="WindowHandles"/>
+          <include name="setUPReport"/>
+          <include name="URL"/>
+          <include name="LaunchURL"/>
+          <include name="dologin" invocation-numbers="1 2"/>
+          <include name="remove_cart"/>
+          <include name="add_cart" invocation-numbers="1 2"/>
+          <include name="Setup"/>
+          <include name="getresult"/>
+          <include name="doregister" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- TestCases.TestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
